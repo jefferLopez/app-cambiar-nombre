@@ -7,6 +7,7 @@ import shutil
 ruta = os.path.join("D:\\", "Serie", "black-clover")
 extension = ".mkv"
 nomPlantilla = "black-clover"
+numCapitulo = 1
 
 
 # Obtiene los archivos de la ruta
@@ -49,7 +50,7 @@ for archivo in listaArchivos:
 # Ordena la lista de archivos a renombrar
 listaArchivosRenombrar = sorted(listaArchivosRenombrar, )
 # Crea un contador
-contador = 1
+contador = numCapitulo
 # Obtiene la cantidad de digitos de la cantidad de elementos de la lista
 canDigitos = len(str(len(listaArchivosRenombrar)))
 
